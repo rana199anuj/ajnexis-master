@@ -1,6 +1,6 @@
-// GRC Technologies – site.js
+// GRC India – site.js
 // Style: web.ncaitnoida.com inspired
-// Dark theme, cyan/blue gradient, glassmorphism, NO calculator
+// Dark theme, teal/navy gradient, glassmorphism, NO calculator
 
 (function () {
   "use strict";
@@ -57,7 +57,10 @@
     return `
     <header id="site-header">
       <div class="container header-inner">
-        <a href="#home" class="logo-text">GRC Technologies</a>
+        <a href="#home" class="logo-wrap">
+          <img src="./grc-india-logo.png" alt="GRC India Logo" class="logo-img" />
+          <span class="logo-text">GRC India</span>
+        </a>
         <button id="menu-btn" class="menu-btn" aria-label="Toggle navigation">
           <i class="fas fa-bars"></i>
         </button>
@@ -81,30 +84,34 @@
     return `
     <section id="home" class="hero">
       <div class="container">
-        <div class="hero-badge">
-          <span class="spark">✦</span> PREMIUM JAVA &amp; CLOUD SOLUTIONS
-        </div>
-        <h1 class="hero-title" id="hero-title">
-          <span class="line1">Transform Your</span>
-          <span class="line2">Business Vision</span>
-        </h1>
-        <p class="hero-sub" id="hero-sub">
-          GRC Technologies crafts high-performance Java solutions that drive innovation,
-          accelerate growth, and transform your business into an industry leader.
-        </p>
-        <div class="hero-btns" id="hero-btns">
-          <a href="#contact" class="btn-hero-primary">
-            Start Your Project <i class="fas fa-arrow-right"></i>
-          </a>
-          <a href="#services" class="btn-hero-outline">
-            View Services <i class="fas fa-bolt"></i>
-          </a>
-        </div>
-        <div class="hero-trust-row" id="hero-trust">
-          <span class="trust-pill"><i class="fas fa-shield-alt"></i> Secure &amp; Reliable</span>
-          <span class="trust-pill"><i class="fas fa-star"></i> 5-Star Rated</span>
-          <span class="trust-pill"><i class="fas fa-clock"></i> 24/7 Support</span>
-          <span class="trust-pill"><i class="fas fa-check-circle"></i> On-Time Delivery</span>
+        <div class="hero-grid">
+          <div class="hero-text-col">
+            <h1 class="hero-title" id="hero-title">
+              <span class="line1">Transform Your</span>
+              <span class="line2">Business Vision</span>
+            </h1>
+            <p class="hero-sub" id="hero-sub">
+              GRC India crafts high-performance Java &amp; Cloud solutions that drive innovation,
+              accelerate growth, and transform your business into an industry leader.
+            </p>
+            <div class="hero-btns" id="hero-btns">
+              <a href="#contact" class="btn-hero-primary">
+                Start Your Project <i class="fas fa-arrow-right"></i>
+              </a>
+              <a href="#services" class="btn-hero-outline">
+                View Services <i class="fas fa-bolt"></i>
+              </a>
+            </div>
+            <div class="hero-trust-row" id="hero-trust">
+              <span class="trust-pill"><i class="fas fa-shield-alt"></i> Secure &amp; Reliable</span>
+              <span class="trust-pill"><i class="fas fa-star"></i> 5-Star Rated</span>
+              <span class="trust-pill"><i class="fas fa-clock"></i> 24/7 Support</span>
+              <span class="trust-pill"><i class="fas fa-check-circle"></i> On-Time Delivery</span>
+            </div>
+          </div>
+          <div class="hero-img-col" id="hero-img">
+            <img src="./hero-illustration.png" alt="Java & Cloud Solutions" class="hero-illustration" />
+          </div>
         </div>
       </div>
     </section>`;
@@ -190,6 +197,20 @@
             ["Technology Roadmap","System Design Review","Legacy Modernization","Code Reviews","Performance Audit","Best Practices"],
             "reveal-d2"
           )}
+          ${svcCard(
+            "grad-cyan","🎨",
+            "Web Design &amp; Development",
+            "Stunning, responsive websites crafted with modern design trends — from landing pages to full-scale web applications.",
+            ["Responsive Design","Landing Pages","E-Commerce Sites","CMS Integration","SEO Optimization","Performance Tuning"],
+            "reveal-d1"
+          )}
+          ${svcCard(
+            "grad-purple","✨",
+            "UI/UX Design",
+            "User-centered design that combines aesthetics with usability — creating intuitive interfaces that delight users and drive conversions.",
+            ["Wireframing","Prototyping","User Research","Design Systems","Figma / Adobe XD","A/B Testing"],
+            "reveal-d2"
+          )}
         </div>
       </div>
     </section>`;
@@ -216,8 +237,8 @@
         <div class="about-grid">
           <div class="about-image-area reveal">
             <div class="about-img-card">
-              <span class="about-icon-big"><i class="fas fa-laptop-code"></i></span>
-              <h3>GRC Technologies</h3>
+              <img src="./grc-india-logo.png" alt="GRC India" class="about-logo-img" />
+              <h3>GRC India</h3>
               <p>Building Tomorrow's Solutions Today</p>
             </div>
             <div class="ab-float-badge">
@@ -227,12 +248,12 @@
           </div>
 
           <div class="about-text reveal-d2">
-            <div class="sec-badge"><i class="fas fa-building"></i> ABOUT GRC TECHNOLOGIES</div>
+            <div class="sec-badge"><i class="fas fa-building"></i> ABOUT GRC INDIA</div>
             <h2 class="sec-title">
               Pioneering <span class="grad">Digital Excellence</span>
             </h2>
             <p>
-              GRC Technologies is a India-based IT services firm specializing in Java development,
+              GRC India is an India-based IT services firm specializing in Java development,
               Spring Boot microservices, cloud infrastructure, and enterprise application support.
               Since our founding, we've been at the forefront of digital transformation — empowering
               businesses with reliable, scalable, and high-performance technology solutions.
@@ -335,7 +356,7 @@
         <div class="testimonials-grid">
           ${testiCard(
             "★★★★★",
-            '"GRC Technologies transformed our legacy system into a high-performance Spring Boot microservices architecture. Quality and communication were outstanding."',
+            '"GRC India transformed our legacy system into a high-performance Spring Boot microservices architecture. Quality and communication were outstanding."',
             "R","av-blue","Rajesh Sharma","CTO, FinTech Solutions India"
           )}
           ${testiCard(
@@ -345,7 +366,7 @@
           )}
           ${testiCard(
             "★★★★★",
-            '"Outstanding Java expertise and proactive support. GRC\'s team understood our vision perfectly and built exactly what our enterprise needed."',
+            '"Outstanding Java expertise and proactive support. GRC India\'s team understood our vision perfectly and built exactly what our enterprise needed."',
             "A","av-green","Amit Kumar","Product Manager, ERP Innovations"
           )}
         </div>
@@ -457,7 +478,10 @@
     <footer>
       <div class="container">
         <div class="footer-inner">
-          <p class="footer-logo">GRC Technologies</p>
+          <div class="footer-logo-wrap">
+            <img src="./grc-india-logo.png" alt="GRC India" class="footer-logo-img" />
+            <p class="footer-logo">GRC India</p>
+          </div>
           <p class="footer-tagline">
             Transforming businesses through innovative Java &amp; cloud technology solutions. Your success is our mission.
           </p>
@@ -476,7 +500,7 @@
             <a href="https://wa.me/${WHATSAPP_NUMBER}" class="soc-btn" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
           </div>
           <p class="footer-copy">
-            © ${new Date().getFullYear()} GRC Technologies. All rights reserved. Made with ❤️ in India.
+            © ${new Date().getFullYear()} GRC India. All rights reserved. Made with ❤️ in India.
           </p>
         </div>
       </div>
@@ -486,7 +510,7 @@
   // ─── GMAIL FLOAT ─────────────────────────────────────────────────────────────
   function buildGmailFloat() {
     return `
-    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=${CONTACT_EMAIL}&su=Support%20Request%20-%20GRC%20Technologies" target="_blank" rel="noopener" class="gmail-float" aria-label="Email Support via Gmail">
+    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=${CONTACT_EMAIL}&su=Support%20Request%20-%20GRC%20India" target="_blank" rel="noopener" class="gmail-float" aria-label="Email Support via Gmail">
       <span class="gmail-tooltip">Email Support!</span>
       <span class="gmail-float-btn"><i class="fab fa-google"></i></span>
     </a>`;
