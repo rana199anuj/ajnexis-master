@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://ajnexis.com/sitemap.xml
+Sitemap: https://grcind.com/sitemap.xml
